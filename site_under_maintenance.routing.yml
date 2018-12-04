@@ -1,0 +1,9 @@
+# site_under_maintenance only has one route. It is to a page explaining
+# the module.
+site_under_maintenance_description:
+  path: 'admin/site_under_maintenance'
+  defaults:
+    _controller: '\Drupal\site_under_maintenance\Controller\SiteUnderMaintenanceController::description'
+    _title: 'Site Under Maintenance'
+  requirements:
+    _permission: 'access content'

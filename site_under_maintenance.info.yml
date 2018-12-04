@@ -1,0 +1,5 @@
+name: Site under maintenance
+type: module
+description: 'Site under maintenance for Drupal 8 choice custom or existing template.'
+package: Site under maintenance
+core: 8.x

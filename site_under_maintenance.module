@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Module file for site_under_maintenance.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ *
+ * @see hook_help()
+ */
+
+function site_under_maintenance_help($route_name, RouteMatchInterface $route_match) {  
+  switch ($route_name) {  
+    // Main module help for the site_under_maintenance module.  
+    case 'help.page.site_under_maintenance':  
+      $output = '';  
+      $output .= '<h3>' . t('About') . '</h3>';  
+      $output .= '<p>' . t('This is the help to choose custom or existing site under maintenance template') . '</p>';  
+      $output .= '<h3>' . t('Uses') . '</h3>';  
+      $output .= '<p>' . t('If our website in maintenance mode and we want to creative template for under maintenance page, Then we can select default template or we can upload own custom template.') . '</p>';  
+      return $output;  
+    default:  
+  }  
+} 
