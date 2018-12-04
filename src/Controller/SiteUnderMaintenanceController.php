@@ -18,7 +18,7 @@ class SiteUnderMaintenanceController extends ControllerBase{
    *
    * Our router maps this method to the path 'site_under_maintenance'.
    */
-  function description() {
+  function social_link() {
     $build = array(
       '#markup' => t('<h2>Site under maintenance for Drupal</h2>
       <p>A very basic creative html. User can upload own custom html or choose existing html of module.</p>'),

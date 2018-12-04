@@ -1,9 +1,33 @@
 # site_under_maintenance only has one route. It is to a page explaining
 # the module.
-site_under_maintenance_description:
-  path: 'admin/site_under_maintenance'
+site_under_maintenance_description.social_link:
+  path: 'admin/site-under-maintenance/social-link'
   defaults:
-    _controller: '\Drupal\site_under_maintenance\Controller\SiteUnderMaintenanceController::description'
-    _title: 'Site Under Maintenance'
+    _form: '\Drupal\site_under_maintenance\Controller\SiteUnderMaintenanceController::social_link'
+    _title: 'Social Link'
+  requirements:
+    _permission: 'access content'
+
+site_under_maintenance_description.general_setting:
+  path: 'admin/site-under-maintenance/general-setting'
+  defaults:
+    _form: '\Drupal\site_under_maintenance\Controller\SiteUnderMaintenanceController::general_setting'
+    _title: 'General Setting'
+  requirements:
+    _permission: 'access content'
+
+site_under_maintenance_description.google_analytics:
+  path: 'admin/site-under-maintenance/google-analytics'
+  defaults:
+    _form: '\Drupal\site_under_maintenance\Controller\SiteUnderMaintenanceController::google_analytics'
+    _title: 'Google Analytics'
+  requirements:
+    _permission: 'access content'
+
+site_under_maintenance_description.design_and_layout:
+  path: 'admin/site-under-maintenance/design-and-layout'
+  defaults:
+    _form: '\Drupal\site_under_maintenance\Controller\SiteUnderMaintenanceController::google_analytics'
+    _title: 'Google Analytics'
   requirements:
     _permission: 'access content'
